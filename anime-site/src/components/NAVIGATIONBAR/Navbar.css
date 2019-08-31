@@ -1,0 +1,90 @@
+.vasea2 {
+    background-color:white;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left:0px;
+    padding-right:0px;
+    box-sizing: border-box;
+    text-transform:uppercase;
+
+    
+}
+.list {  /* className la <ul> */
+    text-align: center;
+    font-family: open-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:12px; 
+    display:flex;
+    list-style-type: none;   
+}
+.header_center{ /* className la div-ul in care se afla lista */
+    margin:0 auto 0 20px;
+    display:flex;
+}
+.elementList{ /* className la toate <li> */
+    margin-right:40px;    
+    display:inline;
+    align-self: center;
+    white-space: nowrap;
+    color:#5a5a5a;
+    transition : color 0.14s ease;
+
+    /* min-width: 78px;  sa nu uit*/ 
+}
+.elementList:hover {
+ color:#000000;
+}
+.headerColor{ /*TOATA BARA DE NAVIGARE  */
+    background-color:#f3f3f3;
+}
+.container{  /* className La CONTAINER ( In el se afla tot NAVBAR-ul.*/
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left:15px;
+    padding-right:15px;
+    box-sizing: border-box;
+    height: 70px; 
+    overflow-x:visible;
+}
+.container1{
+    display: flex;
+    height: 100%;
+    width:100%;
+    align-items: center;
+}
+html{
+overflow-x:auto;
+height:auto;
+width:100vw;
+background-color: #e5e8f2;
+}
+.plusLogo{ /* plus-ul din dreapta la logo*/
+    width: 16px;
+    height: 16px;
+    padding-bottom: 1px;
+}
+.logo{ /* pluslogo+textLogo contine ambele*/
+    display:flex;
+    align-items:center;
+    margin:0;
+}
+.textLogo{ /*textul din animus din logo */
+    font-family: 'Baloo', cursive;
+    font-size:30px;
+    padding-right: 5px;
+    color:#5a5a5a;
+
+}
+a {
+    text-decoration:none;
+}
+.black:focus{
+ color:black;
+}
+.elementContainer{/* tine toate trei alemenete din navbar (searchBar,categoriile , -faralogo)*/
+   width: 100%;
+    box-sizing:content-box;
+    display:flex;
+}

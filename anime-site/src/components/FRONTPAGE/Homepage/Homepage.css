@@ -1,0 +1,66 @@
+.pageContent{
+    min-height: 100vh;
+}
+.content-container{
+    max-width: 1300px;
+    margin:0 auto;
+    padding-left: 6px;
+    padding-right:6px;
+}
+.componentName{
+    font-family: 'Overpass', sans-serif;
+    font-weight:900;
+    font-size:22px;
+    box-sizing:content-box;
+    color: #5c728a;
+    align-self: flex-start;
+    padding:8px 0  0 9px;
+}
+.contentCardsContainer{
+}
+.mostPopularCard{
+display: grid;
+grid-column-gap: 39px;
+grid-row-gap: 70px;
+grid-template-columns: repeat(auto-fill,182px);
+grid-template-rows: repeat(auto-fill,262px);
+justify-content: space-evenly;
+}
+.mediaCard {
+    height: 262px;
+    width: 182px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 2.91px 0.09px rgba(0, 0, 0, 0.1);
+    position:relative;
+    overflow:hidden;
+    display:flex;
+  }
+.img img{
+
+    height: 100%;
+    width: 100%;
+}
+.mediaCardTitle{
+    position: absolute;
+    align-self:flex-end;
+    background-color: rgba(0, 0, 0, 0.6);
+    width:100%;
+    color:white;
+    font-weight: 600;
+    padding:7px 9px;
+}
+.episode{
+position: absolute;
+padding: 7px 9px;
+color:rgb(129, 35, 218);
+font-weight:700;
+font-size:14px;
+width: 183px;
+text-align: center;
+
+}
+.flex{
+    flex-direction: column;
+}
+  
