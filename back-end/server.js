@@ -39,7 +39,18 @@ app.get("/homepage", async (req, res) => {
   })
   console.log(`O intrat un patan de pe IP-ul - ${req.connection.remoteAddress}`);
 });
-
+app.get("/ongoing-animes",async (req,res)=> {
+  const db = getDb()
+  db.collection("ongoingAnimes").find().toArray((err,result)=>{
+    res.json(result)
+  })
+})
+app.get("/popular",async (req,res)=> {
+  const db = getDb()
+  db.collection("popular").find().toArray((err,result)=>{
+    res.json(result)
+  })
+})
 mongoConnect(() =>
   app.listen(process.env.PORT, "0.0.0.0", () =>
     console.log("Server start on port:" + process.env.PORT)

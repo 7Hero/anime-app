@@ -4,7 +4,7 @@
 .form{/* La fel ca la .searchTab*/
     /* border-radius:4px; */
     background-color: rgba(115,99,255,0.76);
-    background-image: linear-gradient(-88deg, #824efb 0%, #8b5bfc 52%, #8e7bfc 100%);
+    background: linear-gradient(90deg, #58C8DF 0%, #74FFD9 100%);
     position: relative;
     display:flex;
     width:300px;
@@ -13,7 +13,7 @@
     border-radius: 25px;
     /* -webkit-box-shadow: 0px 0px 54px 1px rgba(115,99,255,0.76);
     -moz-box-shadow: 0px 0px 54px 1px rgba(115,99,255,0.76); */
-    box-shadow: 0px 0px 25px 1px rgba(115,99,255,0.76);
+    box-shadow: 0px 0px 15px #70F8DA;
     
 }
 .button{/* Buttonul de search*/

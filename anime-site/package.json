@@ -8,9 +8,11 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "react-snap": "^1.23.0"
   },
   "scripts": {
+    "postbuild": "react-snap",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

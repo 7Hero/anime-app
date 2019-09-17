@@ -12,19 +12,19 @@ const Frontpage = () => {
         <div className="overflow">
           <div className="container">
             <div className="container1">
-            {" "}
+          
             {/*limita la latime*/}
             <div className="elementContainer">
-              {" "}
+             
               {/*contine logoul search barul si categorille*/}
               <div className="logo">
-                {" "}
+                
                 {/*contine logoul si iconul de la logo*/}
                 <Link className="textLogo" to="/">animus</Link>
                 <img className="plusLogo" src="plus.svg" />
               </div>
               <div className="header_center">
-                {" "}
+               
                 {/*contine categoriile*/}
                 <ul className="list">
                   <li className="elementList">

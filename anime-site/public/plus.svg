@@ -1,5 +1,11 @@
  <svg xmlns="http://www.w3.org/2000/svg"
   width="332px" height="332px">
-<path fill-rule="evenodd"  fill="red"
+  <defs>
+    <linearGradient id="myGradient" gradientTransform="rotate(0)">
+      <stop offset="0%"  stop-color="#58C8DF" />
+      <stop offset="100%" stop-color="#74FFD9" />
+    </linearGradient>
+  </defs>
+<path fill-rule="evenodd"  fill="url('#myGradient')"
  d="M332.000,208.000 L210.000,208.000 L210.000,332.000 L123.000,332.000 L123.000,208.000 L-0.000,208.000 L-0.000,121.000 L123.000,121.000 L123.000,-0.000 L210.000,-0.000 L210.000,121.000 L332.000,121.000 L332.000,208.000 Z"/>
 </svg>

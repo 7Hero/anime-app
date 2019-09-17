@@ -13,7 +13,7 @@ const Searchbar = ()  =>  {
       if (search.length > 3)
       {
      axios(`http://localhost:5500/find/${search}`).then(({data}) => {setAnime(data)
-    console.log({data})});     
+    });     
 }
     else setAnime({video:[],cnt:0});
 
@@ -33,10 +33,6 @@ const Searchbar = ()  =>  {
     }
     else setID([])
     },[anime.cnt])
-    
-     
-
-    console.log(`ID este ${ID}`)
     const onSearch = event => {
       setSearch(event.target.value);
     };
@@ -47,31 +43,17 @@ const Searchbar = ()  =>  {
         <div className="form1">
         <form className="form">
           <button className="button" type="submit">
-            <svg
-              className="searchButton"
-              version="1.1"
-              id="Capa_1"
-              fill="#020d18"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="20px"
-              height="20px"
-              viewBox="0 0 485.213 485.213"
-            >
-              <path
-                fill="#f3f3f3"
-                d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951
-    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46
-    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465
-    C318.424,257.208,257.206,318.416,181.956,318.416z"
-              />
-              <path
-                fill="#f3f3f3"
-                d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324
-    c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z"
-              />
-            </svg>
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M23.9179 21.8602L18.0916 15.9194C19.5896 14.1735 20.4104 11.9768 20.4104 9.68999C20.4104 4.34701 15.9764 0 10.5266 0C5.07678 0 0.642822 4.34701 0.642822 9.68999C0.642822 15.033 5.07678 19.38 10.5266 19.38C12.5726 19.38 14.5222 18.775 16.1892 17.6265L22.0597 23.6124C22.3051 23.8622 22.6351 24 22.9888 24C23.3235 24 23.6411 23.8749 23.8822 23.6474C24.3944 23.1641 24.4108 22.3628 23.9179 21.8602ZM10.5266 2.52782C14.5549 2.52782 17.832 5.74069 17.832 9.68999C17.832 13.6393 14.5549 16.8522 10.5266 16.8522C6.49832 16.8522 3.2212 13.6393 3.2212 9.68999C3.2212 5.74069 6.49832 2.52782 10.5266 2.52782Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="24.48" height="24" fill="white" transform="translate(0.219971)"/>
+</clipPath>
+</defs>
+</svg>
+
           </button>
           <input
             className="searchInput"
@@ -83,8 +65,8 @@ const Searchbar = ()  =>  {
             <svg
               className="resetButton"
               xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="15"
+              width="17"
+              height="17"
               viewBox="0 0 14 15"
             >
               <g>

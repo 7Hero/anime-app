@@ -19,7 +19,7 @@
     list-style-type: none;   
 }
 .header_center{ /* className la div-ul in care se afla lista */
-    margin:0 auto 0 20px;
+    margin:0 auto 0 73px;
     display:flex;
 }
 .elementList{ /* className la toate <li> */
@@ -27,7 +27,7 @@
     display:inline;
     align-self: center;
     white-space: nowrap;
-    color:#5a5a5a;
+    color:#777777;
     transition : color 0.14s ease;
 
     /* min-width: 78px;  sa nu uit*/ 
@@ -36,17 +36,20 @@
  color:#000000;
 }
 .headerColor{ /*TOATA BARA DE NAVIGARE  */
-    background-color:#f3f3f3;
+    /* background-color:#f3f3f3; */
+    margin: 54px 0 24px ;
 }
 .container{  /* className La CONTAINER ( In el se afla tot NAVBAR-ul.*/
     align-items: center;
-    max-width: 1300px;
+    max-width: 1304px;
     margin: 0 auto;
     padding-left:15px;
     padding-right:15px;
     box-sizing: border-box;
     height: 70px; 
     overflow-x:visible;
+    background: #F3F3F3;
+    border-radius: 12px;
 }
 .container1{
     display: flex;
@@ -74,7 +77,7 @@ background-color: #e5e8f2;
     font-family: 'Baloo', cursive;
     font-size:30px;
     padding-right: 5px;
-    color:#5a5a5a;
+    color: #196267;
 
 }
 a {

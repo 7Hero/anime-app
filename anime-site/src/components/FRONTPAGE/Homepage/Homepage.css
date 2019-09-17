@@ -1,66 +1,263 @@
-.pageContent{
-    min-height: 100vh;
+.anime{
+    flex-basis: 80%; margin-right:16px;
+    max-width: 1037px;
 }
+.ongoing{
+    flex-grow:1;
+    max-width: 248px;
+    height: 100%;
+}
+
 .content-container{
-    max-width: 1300px;
-    margin:0 auto;
-    padding-left: 6px;
-    padding-right:6px;
+    max-width: 1304px;
+    margin:auto;
+    display:flex;
 }
-.componentName{
-    font-family: 'Overpass', sans-serif;
-    font-weight:900;
-    font-size:22px;
-    box-sizing:content-box;
-    color: #5c728a;
-    align-self: flex-start;
-    padding:8px 0  0 9px;
+.prima-bara{
+    display:flex;
+
 }
-.contentCardsContainer{
+.sub-dub{
+    margin:0 0 0 10px;
+    background-color:white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align:center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    display:flex;
+    justify-content: center;
+    color:#dcdcdc;
+}
+.sub-dub > button{
+    background-color:transparent;
+    border:none;
+    color:#DCDCDC;
+}
+.category{
+display:flex;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #196267;
+}
+.category > .thin{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #196267;
+}
+.pagination{
+    margin:0 0 0 auto;
+    display:flex;
+    align-items:center;
+}
+.button-left{
+    padding:3px 7px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color:white;
+}
+.button-right{
+    padding:3px 7px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color:white;
+}
+.page-number{
+    padding:6.5px 7px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color:white;
+    margin:0 6px;
+   
+    
+} 
+h2{
+    font-family: Roboto;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    margin:0px;
+    white-space: nowrap;
+    color:#0ef5b7;
+   
 }
 .mostPopularCard{
-display: grid;
-grid-column-gap: 39px;
-grid-row-gap: 70px;
-grid-template-columns: repeat(auto-fill,182px);
-grid-template-rows: repeat(auto-fill,262px);
-justify-content: space-evenly;
+    margin:30px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,162px);
+    grid-template-rows: repeat(auto-fill,234px);
+    grid-column-gap: 13px;
+    grid-row-gap: 30px;
+    justify-content: space-evenly;
+
 }
 .mediaCard {
-    height: 262px;
-    width: 182px;
-    border-radius: 5px;
+    height: 234px;
+    width: 162px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 2px 2.91px 0.09px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
     position:relative;
     overflow:hidden;
     display:flex;
+    align-items: flex-end;
   }
-.img img{
-
-    height: 100%;
-    width: 100%;
+  .img img{
+    min-width: 162px;
+    max-height: 234px;
+    object-fit: cover;
 }
 .mediaCardTitle{
     position: absolute;
-    align-self:flex-end;
+    
     background-color: rgba(0, 0, 0, 0.6);
     width:100%;
-    color:white;
-    font-weight: 600;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+
+color: #FFFFFF;
     padding:7px 9px;
 }
 .episode{
-position: absolute;
-padding: 7px 9px;
-color:rgb(129, 35, 218);
-font-weight:700;
-font-size:14px;
-width: 183px;
-text-align: center;
+    padding:4px 0 0 0 ;
+    position: relative;
+    width:100%;
+    font-family: Roboto;
+font-style:normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 15px;
+
+/* gradient */
+color:#0ef5b7;
+    
 
 }
 .flex{
     flex-direction: column;
 }
-  
+.ongoing{
+    border-radius:7px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.ongoing-title{
+    background: linear-gradient(90deg, #58C8DF 0%, #74FFD9 100%);
+    border-radius:7px 7px 0 0;
+    /* height: 24px; */
+    display:flex;
+    align-items: center;
+    
+}
+.ongoing-title > h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #F3F3F3;
+    padding:5px 0 5px 14px;
+}
+.ongoing-title1{
+    display:flex;
+    align-items: center;
+}
+.ongoing > .ongoing-title1 > .title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    overflow: hidden;
+    /* verde inchis */
+    color: #196267;
+    padding:0px 7px 0 0;
+}
+.img1 img {
+    margin:5px 7px 5px 7px;
+    max-height: 25px;
+    width: 25px;
+    border-radius:7px;
+}
+.popular-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-column-gap: 13px;
+    grid-row-gap: 30px;
+    margin:30px 0 0 0;
+}
+.popular-card{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    background-color: white;
+    display:flex;
+    max-width: 512px;
+    max-height: 150px;
+}
+.popular-card > img {
+    border-radius: 7px 0 0 7px;
+    min-width:107px;
+    max-height: 150px;
+    overflow-y:hidden;
+    
+    
+}
+.latest-anime{
+    margin: 0 0 24px 0 ;
+}
+.info {
+padding:5px 15px 5px 10px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 15px;
+color: #777777;
+max-height: 150px;
+    
+}
+.popular-title{
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+white-space: nowrap;
+color: #196267;
+text-overflow: ellipsis;
+overflow: hidden;
+padding:0 0 3px 0;
+}
+.rating{
+    display:flex;
+}
+.blue{
+   
+    color: #0964CE;
+
+
+}
+.description{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+padding:0 0 10px 0;
+height: 84px;
+overflow-y:hidden;
+}

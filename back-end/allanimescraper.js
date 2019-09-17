@@ -26,9 +26,7 @@ GetPages = async () => {
             arr.push({
                 title: $(el).text(),
                 link: anime + $(el).attr("href"),
-                linkHref: $(el)
-                    .attr("href")
-                    .replace("/category/", "")
+                linkHref: $(el).attr("href").replace("/category/", "")
             });
         });
     }
