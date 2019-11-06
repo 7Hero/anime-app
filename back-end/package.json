@@ -20,7 +20,7 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "mongoose": "^5.6.9",
+    "mongoose": "^5.7.5",
     "request": "^2.88.0"
   }
 }
